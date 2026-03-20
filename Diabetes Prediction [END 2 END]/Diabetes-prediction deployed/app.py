@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+
 filename = 'diabetes-prediction-rfc-model.pkl'
 classifier = pickle.load(open(filename, 'rb'))
 
